@@ -6,7 +6,7 @@
 
 - Node.js v18.20.3
 - yarn v4.2.2
-- 別リポジトリにあるメール送信 Worker が先にデプロイされていること
+- 別リポジトリにある [メール送信 Worker](https://github.com/OPENSPHERE-Inc/sendmail-worker-example) が先にデプロイされていること
 
 ## デプロイ
 

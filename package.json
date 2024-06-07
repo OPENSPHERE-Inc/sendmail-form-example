@@ -1,0 +1,35 @@
+{
+  "name": "sendmail-form-example",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "serve out",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
+    "preview": "yarn build && wrangler pages dev",
+    "deploy": "yarn build && wrangler pages deploy"
+  },
+  "dependencies": {
+    "bulma": "^1.0.1",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.5",
+    "serve": "^14.2.0",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.11.3",
+    "@cloudflare/workers-types": "^4.20240605.0",
+    "@types/node": "^18.11.5",
+    "@types/react": "^18.0.23",
+    "@types/react-dom": "^18.0.7",
+    "wrangler": "^3.60.0"
+  },
+  "volta": {
+    "node": "18.20.3",
+    "yarn": "4.2.2"
+  }
+}
